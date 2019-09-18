@@ -1,0 +1,11 @@
+.array {
+	margin-bottom: 20px;
+	border-bottom: 2px solid #000;
+}
+
+#arrays {
+	max-width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
