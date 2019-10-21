@@ -18,7 +18,11 @@ body {
 	color: #fff;
 	font-size: 40px;
 	text-decoration: none;
+}
 
+.itemLink:hover {
+	color: #97c0f4;
+	
 }
 
 .list {
