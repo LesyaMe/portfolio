@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url(img/cosmos.jpg);
+}
+
+.container {
+	width: 40%;
+	margin: 200px auto;
+}
+
+.itemLink {
+	color: #fff;
+	font-size: 40px;
+	text-decoration: none;
+
+}
+
+.list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	font-family: 'Indie Flower', cursive;
+	font-style: italic;
+
+}
+
+.item {
+	display: inline-block;
+	
+}
