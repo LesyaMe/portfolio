@@ -10,8 +10,10 @@ body {
 }
 
 .container {
-	width: 40%;
+	
+	width: 50%;
 	margin: 200px auto;
+	text-align: center;
 }
 
 .itemLink {
@@ -36,5 +38,6 @@ body {
 
 .item {
 	display: inline-block;
-	
+	width: 70%;
+	margin-bottom: 40px;
 }
