@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 * {
 	margin: 0;
@@ -10,34 +9,36 @@ body {
 }
 
 .container {
-	
-	width: 50%;
-	margin: 200px auto;
+    margin-top: 25vmin;
 	text-align: center;
-}
-
-.itemLink {
-	color: #fff;
-	font-size: 40px;
-	text-decoration: none;
-}
-
-.itemLink:hover {
-	color: #97c0f4;
-	
 }
 
 .list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
 	font-family: 'Indie Flower', cursive;
 	font-style: italic;
-
+	
 }
 
 .item {
 	display: inline-block;
-	width: 70%;
+	width: 60%;
 	margin-bottom: 40px;
 }
+
+
+.itemLink {
+	color: #fff;
+	font-size: 10vmin;
+	text-decoration: none;
+}
+
+.itemLink:hover {
+	color: #97c0f4;
+
+}
+
+
+
