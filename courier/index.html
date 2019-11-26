@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Заявка на курьера</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+	
+</head>
+<body class="bg-light">
+    <main class="mx-auto w-75 p-3">
+        <h1 class="text-center border-bottom pb-3">Заказ курьера</h1>
+        <form action="result.html" class="mt-4">
+            <div class="d-flex">
+                <section class="col">
+                    <h2 class="blockquote text-center">Отправитель</h2>
+                    <input class="form-control mb-2" type="text" id="sender" name="sender" required placeholder="Ведите название организации отправителя">
+                    <input class="form-control mb-2" type="text" id="sender-adress" name="sender-adress" required placeholder="Адрес отправителя">
+                    <input class="form-control mb-2" type="text" id="sender-contact" name="sender-contact" placeholder="Контактное лицо (Иванов И.И.)">
+                    <input class="form-control mb-2" type="tel" id="sender-phone" name="sender-phone" placeholder="+79876665544"> 
+                </section>
+            
+                <section class="col">
+                    <h2 class="blockquote text-center">Получатель</h2>
+                    <input class="form-control mb-2" type="text" id="recipient" name="recipient" required placeholder="Ведите название организации получателя">
+                    <input class="form-control mb-2" type="text" id="recipient-adress" required name="recipient-adress" placeholder="Адрес получателя">
+                    <input class="form-control mb-2" type="text" id="recipient-contact" name="recipient-contact" placeholder="Контактное лицо (Лебедева И.)">
+                    <input class="form-control mb-2" type="tel" id="sender-phone" name="sender-phone" placeholder="+79877775544" > 
+                </section>
+            </div>
+            <div class="d-flex p-4 form-group">
+                <section class="col">
+                    <div class="d-flex">
+                        <label for="delivery-date" class="p-2">Дата: </label>
+                        <input class="form-control" type="date" id="delivery-date" required name="delivery-date">
+                    </div>
+                    <div class="d-flex mt-4">
+                        <small class="font-weight-light">Если важно время отправления или доставки - выберите соответствующее поле и укажите время</small>
+                    </div>
+                    <div class="d-flex form-group">    
+                        <label  for="send" title="Вы выбираете время  прибытия курьера к отправителю">Отправление</label>
+                        <input type="radio" id="send" class="m-2" name="send">
+                        <label for="delivery" title="Вы выбираете время  прибытия курьера к получателю">Доставка</label>
+                        <input type="radio" id="delivery" class="m-2" name="send">
+                        <label  for="delivery-times" class="mr-2">с</label>
+                        <input type="time" id="delivery-times" class="form-control mr-2" name="delivery-times">
+                        <label  for="delivery-time-to" class="mr-2"> по </label>
+                        <input type="time" id="delivery-time-to" class="form-control" name="delivery-time-to">
+                    </div>
+                    <textarea class="form-control mt-4" name="comment" id="comment" placeholder="Комментарий..."></textarea>
+                    </div>
+                </section>
+            </div>   
+            <button class="btn btn-primary btn-lg btn-block w-50 mx-auto" type="submit">Отправить заявку</button>  
+        </form>    
+    </main>
+</body>
+</html>
