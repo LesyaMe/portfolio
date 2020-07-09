@@ -1,0 +1,164 @@
+a {
+	color: 	#fff;
+}
+.header {
+	color: #fff;
+	background-color: #7c7a78;
+	padding-top: 50px;
+	padding-bottom: 160px;
+	background-image: url(img/bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+}
+.nav {
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+a:hover {
+	color: #fed136;
+}
+
+.headline {
+	display: inline-block;
+	margin-left: 0 auto;
+	margin-top: 205px;
+}
+.headline h1 {
+	margin-top: 50px;
+	font-size: 5em;
+	text-transform: uppercase;
+}
+.headline p {
+	font-size: 40px;
+	font-style: italic;
+}
+.btn {
+	color: #fff;
+	margin-top: 60px;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.btn:hover {
+	color: #fed136;
+	background-color: #fff;
+}
+.service,
+.portfolio,
+.about,
+.team {
+	padding: 120px 0;
+}
+.service__info {
+	margin-top: 80px;
+}
+
+.service__desc {
+	font-size: 14px;
+}
+
+.portfolio,
+.team {
+	background-color: #f7f7f7;
+}
+
+.portfolio__description_italic {
+	color: #777777;
+	font-style: italic;
+	margin-bottom: 28px;
+}
+
+.portfolio__header {
+	margin-bottom: 80px;
+}
+
+.portfolio h3 {
+	margin-top: 28px;
+}
+
+
+.team__description {
+	color: #777777;
+	font-style: italic;
+}
+
+.technology {
+	padding: 60px 0;
+}
+
+.technology ul{
+	padding:  inherit;
+}
+
+
+li {
+	list-style-type: none;
+}
+ul .widget-socials {
+	padding: 0px;
+}
+
+.team .content {
+	margin-top: 80px;
+	margin-bottom: 45px;
+}
+.about .content {
+	margin-top: 80px;
+	
+}
+
+.team__img {
+	width: 222px;
+	height: 222px;
+	border-radius: 50%;
+	background-color: #000;
+	margin-bottom: 25px;
+}
+
+.contacts {
+	color: #fff;
+	background-color: #222222;
+	padding-top: 95px;
+	padding-bottom: 110px;
+	background-image: url(img/bg-contact.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+}
+
+.contacts .content {
+	margin-top: 80px;
+	margin-bottom: 30px;
+}
+textarea.form-control {
+	height: 100%;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: 700;
+}
+h3 {
+	font-size: 18px;
+}
+
+.service h3 {
+	margin-top: 25px;
+}
+
+
+.subtitle {
+	font-size: 16px;
+	color: #777777;
+	font-style: italic;
+}
+ footer {
+ 	padding: 16px 0;
+ }
+
+ .footer_copy {
+ 	padding:1.5em;
+ }
