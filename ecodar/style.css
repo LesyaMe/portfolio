@@ -108,8 +108,10 @@
 .work {
 	max-width: 25%;
 	max-height: 350px;
-	height: 300px;
 	position: relative;
+	display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 770px) {
 	.work {
@@ -119,13 +121,39 @@
 }
 
 @media screen and (max-width: 600px) {
+	.headline {
+    margin-top: 0px;
+	}
+	.headline h1 {
+    font-size: 42px;
+    }
+
 	.work {
     max-width: 100%;
-    width: 100%;
+    min-width: 100%;
     max-height: 200px;
     margin-left: auto;
 	margin-right: auto;
 	}
+	.work_header:hover {
+	color: #e84545;
+    }
+    .work_header {
+	position: absolute;
+	top: 40%;
+  	left: 0;
+  	bottom: 0;
+  	right: 0;
+  	text-align: center;
+  	z-index: 3;
+  	color: #fff;
+  	opacity: 1;
+  	transition: 1s;
+  	width: 60%;
+  	margin-left: auto;
+  	margin-right: auto;
+
+   }
 }
 .work_img {
 	width: 100%;
@@ -135,18 +163,21 @@
 
 .work_header {
 	position: absolute;
-	top: 0;
+	top: 40%;
   	left: 0;
   	bottom: 0;
   	right: 0;
   	text-align: center;
   	z-index: 3;
   	color: #fff;
-  	opacity: 0;
+  	opacity: 1;
   	transition: 1s;
-  	padding: 40% 0;
+  	width: 60%;
+  	margin-left: auto;
+  	margin-right: auto;
 
 }
+
 
 .work_head {
 	text-transform: uppercase;
@@ -157,25 +188,41 @@
 	font-size: 14px;
 }
 
-.work::after {
-  content: "";
-  background-color: #e84545;
-  color: #fff;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-  z-index: 2;
-  transition: 0.8s;
-  transform: scaleY(0);
+
+@media screen and (min-width: 770px) {
+	.work_header {
+	position: absolute;
+	top: 40%;
+  	left: 0;
+  	bottom: 0;
+  	right: 0;
+  	text-align: center;
+  	z-index: 3;
+  	color: #fff;
+  	opacity: 0;
+  	transition: 1s;
+	}
+	.work::after {
+	  content: "";
+	  background-color: #e84545;
+	  color: #fff;
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+	  right: 0;
+	  opacity: 0;
+	  z-index: 2;
+	  transition: 0.8s;
+	  transform: scaleY(0);
+	}
+
+	.work:hover::after {
+    	opacity: 80%;
+    	transform: scale(1);
+    }
+	.work:hover .work_header{
+		opacity: 100%;
+	} 
 }
 
-.work:hover::after {
-	opacity: 80%;
-	transform: scale(1);
-}
-.work:hover .work_header{
-	opacity: 100%;
-} 
