@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #E5E5E5;
+	width: 100%;
+	text-align: center;
+	height: 100%;
+	padding: 20px 0;
+}
+/*темная*/
+.dark_body {
+	background-color: #2B234C;
+}
+.container {
+	width: 90%;
+    margin: 0 auto;
+    display: flex;
+    height: 100vh;
+}
+.head {
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 45vh;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.head__img {
+    width: 130%;
+    object-fit: cover;
+    height: 100%;
+}
+/*main добавить класс*/
+main {
+    position: fixed;
+    bottom: 0;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main__head {
+	font-size: 22px;
+    margin-top: 30px;
+}
+/*темная*/
+.dark_mainHead {
+	color: #fff;
+}
+.push {
+	border-radius: 8px;
+    background-color: #2B234C;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 25px;
+    margin-top: 35px;
+    border: none;
+    cursor: pointer;
+}
+
+/*темная*/
+.dark_push {
+	background-color: #D259F5;
+}
+.dark_push:hover::after {
+	content: '';
+	background-color:  #2B234C;
+	opacity: 0.5;
+	box-shadow: 1px 3px 5px 0px;
+}
+.push p {
+    color: #fff;
+    padding: 1em;
+    font-size: 17px;
+}
+.notPush {
+	color: #2B234C;
+    background-color: #E5E5E5;
+    border: none;
+    font-size: 15px;
+    font-family: cursive;
+    cursor: pointer;
+}
+/*темная*/
+.dark_notPush {
+	color: #D259F5;
+	background-color: #2B234C;
+}
