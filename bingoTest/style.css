@@ -21,6 +21,7 @@ body {
     height: 100vh;
     flex-wrap: wrap;
     align-items: flex-end;
+    justify-content: center;
 }
 .head {
     border-radius: 8px;
@@ -31,7 +32,6 @@ body {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 .head__img {
     width: 130%;
@@ -40,7 +40,6 @@ body {
 }
 /*main добавить класс*/
 main {
-    bottom: 0;
     height: 45vh;
     display: flex;
     flex-wrap: wrap;
