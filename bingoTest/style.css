@@ -9,10 +9,12 @@ body {
 	width: 100%;
 	text-align: center;
 	height: 100%;
+	transition: 0.5s;
 }
 /*темная*/
 .dark_body {
 	background-color: #2B234C;
+	transition: 0.5s;
 }
 .container {
 	width: 90%;
@@ -50,10 +52,12 @@ main {
     margin-top: 30px;
     font-family: Arial, sans-serif;
     font-weight: bold;
+    transition: 0.5s;
 }
 /*темная*/
 .dark_mainHead {
 	color: #fff;
+	transition: 0.5s;
 }
 .push {
 	font-family: 'Poppins', sans-serif;
@@ -63,11 +67,13 @@ main {
     width: 100%;
     border: none;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 /*темная*/
 .dark_push {
 	background-color: #D259F5;
+	transition: 0.5s;
 }
 .dark_push:hover::after {
 	content: '';
@@ -86,9 +92,11 @@ main {
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
+    transition: 0.5s;
 }
 /*темная*/
 .dark_notPush {
 	color: #D259F5;
 	background-color: #2B234C;
+	transition: 0.5s;
 }
