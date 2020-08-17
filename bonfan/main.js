@@ -103,4 +103,4 @@
       }
     }());
 
-    var slider = multiItemSlider('.slider')
+    var slider = multiItemSlider('.container')

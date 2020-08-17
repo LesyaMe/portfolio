@@ -5,11 +5,18 @@ body {
       color: #000;
       background-color: #fcfbf6;
     }
+    .container {
+      width: 75%;
+      margin: 0 auto;
+    }
     .row {
       text-align: center;
       padding: 1.5em;
     }
-
+    .desctop_button {
+      color: #000;
+      text-decoration: none
+    }
     .slider {
       position: relative;
       overflow: hidden;
@@ -21,13 +28,15 @@ body {
     }
 
     .slider__item {
-      flex: 0 0 25%;
-      max-width: 50%;
+      flex: 0 0 22%;
+      max-width: 25%;
       border: 1px solid #000;
+      height: 70px;
+      padding: 10px;
     }
     .wrap_item {
-      height: 250px;
-      padding: 40px 30px 25px 30px;
+    /*   height: 250px;
+    padding: 10px; */
     }
 
     .wrap_item img {
@@ -38,16 +47,15 @@ body {
 
     .slider__control {
       position: absolute;
-      top: 50%;
+      top: 12em;
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 40px;
-      color: #fff;
+      width: 100px;
       text-align: center;
       opacity: 0.5;
-      height: 50px;
-      transform: translateY(-50%);
+      height: 50px;/* 
+      transform: translateY(-50%); */
     }
 
     .slider__control:hover,
@@ -84,22 +92,33 @@ body {
     }
 
     .slider__item>div {
-      line-height: 150px;
-      font-size: 50px;
+      /* line-height: 150px; */
+      /* font-size: 50px; */
       text-align: center;
-      height: 2em;
+      height: inherit;
     }
   @media screen and (max-width: 768px){
     .slider__item {
-      flex: 0 0 50%;
-      max-width: 50%;
+      flex: 0 0 46%;
+      max-width: 46%;
       border: 1px solid #000;
     }
-  }
-   @media screen and (max-width: 426px){
+    .slider__control {
+      width: 50px;
+    }
+    .desctop_button {
+      display: none;
+    }
+  @media screen and (max-width: 426px){
+    .slider__control {
+      top: 16em;
+      width: 25px;
+      transform: translateY(-50%)
+    }
     .slider__item {
-      flex: 0 0 100%;
-      max-width: 100%;
-      border: 1px solid #000;
+      flex: 0 0 43%;
+      max-width: 43%;
     }
+
+    
   }
